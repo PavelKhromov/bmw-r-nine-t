@@ -1,17 +1,95 @@
 .btn {
-  background-color: $mainBlue;
-  color: #FFF;
+  background-color: $mainYellow;
+  color: black;
   text-decoration: none;
   padding: .75rem 1.2rem;
   display: inline-block;
 
-  &--orange {
-    background-color: $mainOrange;
+  &--yellow {
+    background-color: $mainYellow;
   }
 
   &--large {
-    font-size: 1.25rem;
-    padding: 1.1rem 1.9rem;
+    font-size: 1rem;
+    padding: .4rem .5rem;
+    margin-right: 3.9rem;
+    margin-top: 2rem;
+    font-family: 'Cinzel Decorative', serif;
+    border-radius: ;
+    
+
+
+    @mixin atSmall {
+      font-size: 1.1rem;
+      margin-right: 6.8rem;
+      }
+
+      @mixin atMedium {
+      font-size: 1.3rem;
+      padding: .7rem 1.6rem;
+      margin-right: 8rem;
+      transform: translateY(40%);
+
+      }
+      
+      @mixin atLarge {
+      font-size: 1.7rem;
+      margin-right: 9.3rem;
+      transform: translateY(60%);
+      }
   }
 
 }
+
+
+.button1{
+  color: black;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative; 
+}
+
+
+.button1 a{
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.button1 span{
+  z-index: 2; 
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.button1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  background-color: black;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+.button1:hover::before{
+  opacity: 1;
+  width: 100%;
+
+}
+
+.button1:hover {
+  color: white;
+}
+

@@ -1,0 +1,43 @@
+.row {
+
+  @mixin clearfix;
+
+  &--gutters {
+    margin-right: -65px;
+  }
+
+  &--gutters > div {
+    padding-right: 65px;
+  }
+
+  &__text {
+    max-height: 750px;
+    width: 750px;
+    background-color: $mainYellow;
+    
+
+    }
+
+  @mixin atMedium {
+    &__medium-4 {
+      float: left;
+      width: 33.33%;
+
+    }
+
+
+    &__medium-6 {
+      float: left;
+      width: 50%;
+      
+      
+    }
+
+    &__medium-8 {
+      float: left;
+      width: 66.66%;
+    }
+  }
+  
+
+}
