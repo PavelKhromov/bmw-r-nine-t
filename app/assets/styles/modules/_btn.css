@@ -93,3 +93,34 @@
   color: white;
 }
 
+
+.button1{
+  color: black;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative; 
+}
+
+
+.button1 a{
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.button1 span{
+  z-index: 2; 
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+
+
+
+
+
