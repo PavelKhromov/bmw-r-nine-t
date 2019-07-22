@@ -7,14 +7,17 @@
         margin-left: auto;
         margin-right: auto;
 		transform: translateX();
-		transform: translateY(-45%);
+		transform: translateY(-50%);
 		font-size: 1.6rem;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 600;
-		background-color: grey;
+		background-color: #404850;
 		top: 60%;
 		height: 180px;
 		width: 290px;
+		color: #FFF;
+		padding-top: 2rem;
+		padding-bottom: 1rem;
 
 		@mixin atSmall {
 			width: 520px;
@@ -29,5 +32,12 @@
 			width: 1000px;
 		}
 		
+	}
+
+	&__text-block-description {
+		font-size: 1rem;
+		font-weight: 200;
+		margin: 1rem 1rem;
+
 	}
 }

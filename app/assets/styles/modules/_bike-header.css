@@ -1,0 +1,69 @@
+.bike-header {
+  position: relative;
+
+  &__text {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+    left: 50%;
+    transform: translate(-50%);
+    
+    
+    @mixin atSmall {
+      font-size: 2rem;
+      margin-top: 1rem;
+
+    }
+
+    @mixin atMedium {
+      font-size: 2.3rem;
+      margin-top: 4rem;
+    }
+
+    @mixin atLarge {
+      font-size: 3rem;
+      margin-top: 4rem;
+    }
+
+  }
+
+  &__discription {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    margin-top: 1rem;
+    font-size: 1rem;
+
+    @mixin atSmall {
+      font-size: 1rem;
+      margin-top: 1rem;
+
+    }
+
+    @mixin atMedium {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+
+    @mixin atLarge {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+
+
+    }
+
+
+    }
+    &__img {
+      position: relative;
+      text-align: center;
+
+      @mixin atMedium {
+       top: 3rem;
+    }
+      
+  }
+}

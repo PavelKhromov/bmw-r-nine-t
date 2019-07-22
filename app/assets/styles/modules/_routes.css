@@ -1,0 +1,34 @@
+.routes {
+	position: relative;
+	
+	&__text {
+
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    text-align: left;
+    font-weight: 600;
+    
+    
+    
+    @mixin atSmall {
+      font-size: 2rem;
+      margin-top: 1rem;
+
+    }
+
+    @mixin atMedium {
+      left: 2rem;
+      font-size: 2.1rem;
+      margin-top: 1rem;
+    }
+
+    @mixin atLarge {
+      left: 2.5rem;
+      font-size: 2.1rem;
+      margin-top: 1.5rem;
+    }
+
+	}
+}

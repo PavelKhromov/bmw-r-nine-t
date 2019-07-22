@@ -4,4 +4,13 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+
+  &__extra {
+  	padding-left: 15px;
+    padding-right: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+
